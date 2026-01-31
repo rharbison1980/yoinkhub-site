@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import './css/style.css';
 
 import AOS from 'aos';
+import { Analytics } from '@vercel/analytics/react';
 
 import Header from './partials/Header';
 import HeroHome from './partials/HeroHome';
@@ -77,6 +78,7 @@ function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
