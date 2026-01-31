@@ -12,72 +12,101 @@ export const siteContent = {
   // ──────────────────────────────────────
   brand: {
     name: 'YoinkHub',
-    tagline: 'Roofing & Construction Estimation Tool',
+    tagline: 'The CRM that actually gets roofing.',
   },
 
   // ──────────────────────────────────────
   // Navigation
   // ──────────────────────────────────────
   nav: {
-    cta: 'Join the Waitlist',
+    links: [
+      { label: 'Features', href: '/features' },
+      { label: 'Community', href: '/community' },
+    ],
+    cta: 'Get Early Access',
   },
+
+  // ══════════════════════════════════════
+  // HOME PAGE
+  // ══════════════════════════════════════
 
   // ──────────────────────────────────────
   // Hero Section
   // ──────────────────────────────────────
   hero: {
-    badge: 'Coming Soon — Join the Waitlist',
-    headline: "Estimates that don't make you wanna throw your laptop off the roof.",
+    badge: 'Coming Soon — Built by Roofers, for Roofers',
+    headline: 'Your CRM shouldn\'t need its own IT department.',
     subheadline:
-      'YoinkHub is the estimation tool built for roofers and contractors who are tired of spreadsheets, guesswork, and lost profit. Smart templates. Automatic calculations. Done.',
+      'Tired of duct-taping 6 different apps together just to send an estimate? YoinkHub is one platform that does it all — CRM, estimates, proposals, email, scheduling, and AI — with zero setup fees, zero add-ons, and zero commitment.',
     cta: 'Get Early Access',
-    ctaSubtext: 'Free during early access. No credit card required.',
+    ctaSubtext: 'Free during early access. No credit card. No contract. No catch.',
   },
 
   // ──────────────────────────────────────
-  // Features Section
+  // Pain Points Section (replaces old Features)
   // ──────────────────────────────────────
-  features: {
-    heading: 'Built for the way contractors actually work',
-    subheading:
-      "No more wrestling with spreadsheets or forgetting to add the waste factor. YoinkHub handles the math so you can focus on the job.",
+  painPoints: {
+    heading: 'Sound familiar?',
+    subheading: 'We built YoinkHub because we were sick of the same problems you are.',
     items: [
       {
-        title: 'Smart Price Lists',
-        description:
-          'Manage materials and labor pricing in one place. Import from Excel, set margins, and keep everything up to date.',
-        icon: 'price-tag',
+        hook: '"Everything is an add-on"',
+        problem: 'Other CRMs lure you in cheap, then nickel-and-dime you for email, proposals, scheduling, and reporting. $20/user becomes $200/user real fast.',
+        solution: 'YoinkHub includes everything. One price. No add-ons. No surprise invoices.',
+        icon: 'money',
       },
       {
-        title: 'Formula-Powered Calculations',
-        description:
-          'Build custom formulas with tokens like roof area, pitch, and waste factor. The math runs itself — just plug in the measurements.',
-        icon: 'calculator',
+        hook: '"I need 6 apps and Zapier to run my business"',
+        problem: 'One tool for estimates, another for CRM, another for email, another for scheduling. Nothing talks to each other. Data lives in 12 different places.',
+        solution: 'CRM, estimates, proposals, email, calendar, tasks, and AI — all in one platform. Your data lives in one place because your business runs in one place.',
+        icon: 'puzzle',
       },
       {
-        title: 'Scope of Work Templates',
-        description:
-          'Create reusable templates for common job types. Materials, labor, and extras — organized in sections, ready to go.',
-        icon: 'clipboard',
+        hook: '"Setup took 3 months and I still can\'t find anything"',
+        problem: 'Most CRMs are built for generic sales teams, not contractors. You spend weeks customizing something that was never designed for roofing in the first place.',
+        solution: 'YoinkHub comes pre-loaded with roofing tokens, pitch multipliers, material databases, and estimate templates. It knows what a hip and a valley are.',
+        icon: 'clock',
       },
       {
-        title: 'Roofing Measurement Tokens',
-        description:
-          'Pre-built tokens for pitches, ridges, hips, valleys, and more. Enter your measurements once and let formulas do the rest.',
-        icon: 'ruler',
+        hook: '"The AI is just a chatbot that says sorry a lot"',
+        problem: 'Every CRM slaps "AI-Powered" on their marketing page. Then you try it and it\'s a glorified search bar that hallucinates your customer data.',
+        solution: 'Our AI reads your price lists, writes estimates, drafts emails in your tone, scores leads, and flags anomalies — with anti-hallucination architecture that cites its sources.',
+        icon: 'brain',
       },
       {
-        title: 'Google Drive Backup',
-        description:
-          'Sync your data to Google Drive automatically. Access your price lists and templates from anywhere.',
-        icon: 'cloud',
+        hook: '"My crew can barely use their phones, let alone this software"',
+        problem: 'Enterprise CRMs designed for corporate sales floors. Your guys are on roofs, not at desks. If it\'s not dead simple, it doesn\'t get used.',
+        solution: 'Built mobile-first. Designed for people who hate software. If your crew can text, they can use YoinkHub.',
+        icon: 'phone',
       },
       {
-        title: 'No Lock-In, Your Data',
-        description:
-          'Export everything as JSON anytime. Import from Excel. Your data stays yours — always.',
+        hook: '"I\'m locked into a contract and they know it"',
+        problem: '12-month commitments. $5,000 setup fees. Hostage-level data export policies. You\'re stuck even when the product sucks.',
+        solution: 'No contracts. No setup fees. Export your data anytime in standard formats. If we\'re not earning your business every month, we don\'t deserve it.',
         icon: 'unlock',
       },
+    ],
+  },
+
+  // ──────────────────────────────────────
+  // What You Get Section
+  // ──────────────────────────────────────
+  whatYouGet: {
+    heading: 'One platform. Everything included.',
+    subheading: 'Stop paying for 12 subscriptions. Start running your business from one place.',
+    items: [
+      { label: 'CRM & Contacts', included: true },
+      { label: 'Estimates & Proposals', included: true },
+      { label: 'Email (Gmail, Outlook, Yahoo, iCloud)', included: true },
+      { label: 'Calendar & Scheduling', included: true },
+      { label: 'Task Management', included: true },
+      { label: 'AI Assistant', included: true },
+      { label: 'Customer Portal', included: true },
+      { label: 'Project Management', included: true },
+      { label: 'Vendor Price Lists', included: true },
+      { label: 'Reports & Analytics', included: true },
+      { label: 'Team Management', included: true },
+      { label: 'Mobile App', included: true },
     ],
   },
 
@@ -85,25 +114,25 @@ export const siteContent = {
   // How It Works Section
   // ──────────────────────────────────────
   howItWorks: {
-    heading: 'From measurements to money in three steps',
+    heading: 'From lead to invoice without switching apps',
     steps: [
       {
         step: 1,
-        title: 'Set up your playbook',
+        title: 'Import your world',
         description:
-          'Add your materials, labor rates, and margins. Import from Excel or build from scratch. Set it once, use it forever.',
+          'Bring your contacts, price lists, and materials from spreadsheets, CSVs, or your old CRM. AI helps map and clean your data automatically.',
       },
       {
         step: 2,
-        title: 'Build your template',
+        title: 'Build estimates in minutes',
         description:
-          'Drag in items from your price list, organize by section, and let formulas handle quantity and pricing calculations.',
+          'Plug in roof measurements, pick a template, and let the calculation engine handle pricing, waste, pitch adjustments, and margins. Send a professional proposal before you leave the driveway.',
       },
       {
         step: 3,
-        title: 'Yoink the estimate',
+        title: 'Let the system work for you',
         description:
-          'Plug in the measurements, review the numbers, and send a professional estimate. Done before lunch.',
+          'AI scores your leads, drafts follow-up emails, flags project risks, and keeps your pipeline moving — so you can focus on the work that actually pays.',
       },
     ],
   },
@@ -113,10 +142,10 @@ export const siteContent = {
   // ──────────────────────────────────────
   stats: {
     items: [
-      { value: '40+', label: 'Roofing Tokens' },
-      { value: '8', label: 'Calculation Functions' },
-      { value: 'Unlimited', label: 'Templates & Price Lists' },
-      { value: '100%', label: 'Your Data' },
+      { value: '$0', label: 'Setup Fee' },
+      { value: '0', label: 'Contracts' },
+      { value: '1', label: 'Platform for Everything' },
+      { value: '100%', label: 'Your Data, Always' },
     ],
   },
 
@@ -125,7 +154,7 @@ export const siteContent = {
   // ──────────────────────────────────────
   socialProof: {
     quote:
-      'We watched contractors lose hours to spreadsheets and miss line items that cost them thousands. YoinkHub exists because estimating shouldn\'t be the hardest part of the job.',
+      'We didn\'t build YoinkHub because the market needed another CRM. We built it because every CRM we tried was either overpriced, half-baked, or built for someone selling insurance — not someone replacing a roof. So we built our own.',
     attribution: 'The YoinkHub Team',
   },
 
@@ -133,9 +162,9 @@ export const siteContent = {
   // Waitlist Section
   // ──────────────────────────────────────
   waitlist: {
-    heading: 'Be first through the door',
+    heading: 'Done with half-baked software?',
     subheading:
-      'Join the waitlist and get early access when we launch. Early birds get it free.',
+      'Get early access to YoinkHub — free. No credit card. No commitment. Just a CRM that finally makes sense for roofing.',
     placeholder: 'Enter your email',
     cta: 'Count Me In',
     successMessage: "You're on the list! We'll be in touch soon.",
@@ -143,12 +172,188 @@ export const siteContent = {
     duplicateMessage: "Looks like you're already on the list! We'll reach out soon.",
   },
 
+  // ══════════════════════════════════════
+  // FEATURES PAGE
+  // ══════════════════════════════════════
+
+  featuresPage: {
+    hero: {
+      headline: 'Every feature. One price. No add-ons.',
+      subheadline: 'Here\'s everything YoinkHub does — and where we are in building it. Full transparency, no vaporware.',
+    },
+    statusLegend: {
+      live: 'Live & Working',
+      beta: 'In Beta',
+      development: 'In Development',
+      planned: 'Planned',
+    },
+    categories: [
+      {
+        name: 'CRM & Contacts',
+        hook: 'Tired of your contacts living in 4 different spreadsheets?',
+        features: [
+          { name: 'Contact & Company Management', benefit: 'Every lead, customer, and vendor in one searchable database with full history.', status: 'live' },
+          { name: 'AI Lead Scoring', benefit: 'Stop guessing who to call next. AI ranks your leads by likelihood to close.', status: 'live' },
+          { name: 'Opportunity Pipeline', benefit: 'Visual pipeline so you always know what\'s sold, what\'s pending, and what\'s slipping.', status: 'live' },
+          { name: 'Bulk Operations', benefit: 'Update 50 contacts at once instead of clicking through them one by one.', status: 'live' },
+          { name: 'Permission Levels', benefit: 'Control who sees what — public, private, or team-only records.', status: 'live' },
+          { name: 'Smart Import', benefit: 'AI-assisted import from CSV, Excel, or JSON. Duplicate detection built in.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Estimates & Proposals',
+        hook: 'Still building estimates in Excel and hoping you didn\'t miss a line item?',
+        features: [
+          { name: 'Estimate Builder', benefit: 'Live calculation engine with measurement tokens, pitch adjustments, waste factors, and margin control.', status: 'live' },
+          { name: 'Roofing-Specific Tokens', benefit: '40+ pre-built tokens for squares, hips, valleys, ridges, flashing — enter once, calculate everywhere.', status: 'live' },
+          { name: 'Estimate Templates', benefit: 'Build once, reuse forever. Templates with materials, labor, and miscellaneous sections.', status: 'live' },
+          { name: 'Upgrade Tiers', benefit: 'Good / Better / Best pricing tiers. Let customers pick their package.', status: 'live' },
+          { name: 'Proposal Builder', benefit: 'Branded proposals with sections, images, and e-signature. Send professional docs, not spreadsheets.', status: 'live' },
+          { name: 'PDF Export', benefit: 'Generate polished PDF proposals in one click.', status: 'live' },
+          { name: 'Customer Portal', benefit: 'Customers review estimates, pick options, and sign — all from a branded portal with your logo.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Pricing & Materials',
+        hook: 'Vendor price lists scattered across email attachments from 2019?',
+        features: [
+          { name: 'Material Database', benefit: 'Centralized materials with pricing, coverage, manufacturers, and vendor associations.', status: 'live' },
+          { name: 'Multi-Vendor Pricing', benefit: 'Same material, different vendors, different prices. Compare and pick the best deal.', status: 'live' },
+          { name: 'Labor Rate Management', benefit: 'Base rates with pitch multipliers (2/12 through 12/12). The math handles itself.', status: 'live' },
+          { name: 'Smart Price List Import', benefit: 'Upload vendor PDFs or spreadsheets. AI parses and maps pricing to your database.', status: 'live' },
+          { name: 'Formula Engine', benefit: 'Custom calculation formulas for quantity and pricing. Spreadsheet-grade power without the spreadsheet.', status: 'live' },
+          { name: 'Manufacturer Scrapers', benefit: 'Auto-pull latest pricing from GAF, CertainTeed, Owens Corning, IKO, and more.', status: 'beta' },
+        ],
+      },
+      {
+        name: 'Email & Communication',
+        hook: 'Alt-tabbing between your CRM and Gmail all day?',
+        features: [
+          { name: 'Built-in Email', benefit: 'Gmail, Outlook, Yahoo, iCloud — your inboxes inside YoinkHub. No Zapier required.', status: 'live' },
+          { name: 'Email Templates', benefit: 'Reusable templates with merge tokens. {{contact.firstName}} writes the email for you.', status: 'live' },
+          { name: 'AI Reply Suggestions', benefit: 'AI drafts replies that match your writing style. Review, tweak, send.', status: 'live' },
+          { name: 'Thread View', benefit: 'Full conversation history with each contact. No more digging through inboxes.', status: 'live' },
+          { name: 'Multi-Account Support', benefit: 'Personal, company, sales — manage all your email accounts in one place.', status: 'live' },
+        ],
+      },
+      {
+        name: 'AI & Automation',
+        hook: 'Heard "AI-Powered" so many times it lost all meaning?',
+        features: [
+          { name: 'AI Agents', benefit: 'Configurable AI assistants with personality, FAQ guardrails, and anti-hallucination architecture.', status: 'live' },
+          { name: 'Knowledge Base (RAG)', benefit: 'Upload your docs. AI searches them semantically and cites its sources.', status: 'live' },
+          { name: 'Weekly Digest', benefit: 'AI-generated summary of your pipeline, anomalies, and action items. Every Monday.', status: 'live' },
+          { name: 'Lead Scoring', benefit: 'ML-based scoring that learns from your pipeline to rank leads by close probability.', status: 'live' },
+          { name: 'Measurement Extraction', benefit: 'Upload a roof report image. AI extracts measurements and populates your estimate.', status: 'beta' },
+          { name: 'Concierge Rules Engine', benefit: 'If/then business rules that automate follow-ups, status changes, and alerts.', status: 'beta' },
+          { name: '4 AI Providers', benefit: 'Claude, Gemini, OpenAI, Grok — pick your provider or let the system choose the best for each task.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Scheduling & Tasks',
+        hook: 'Double-booked your crew again because the calendar lives on a whiteboard?',
+        features: [
+          { name: 'Calendar', benefit: 'Appointments, site visits, inspections — color-coded and shareable across your team.', status: 'live' },
+          { name: 'Task Management', benefit: 'Assign tasks with due dates, priorities, and status tracking. No more sticky notes.', status: 'live' },
+          { name: 'Customer Scheduling Portal', benefit: 'Customers request appointments from your portal. You approve, reschedule, or decline.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Projects & Operations',
+        hook: 'Tracking jobs on a clipboard that got left in the truck?',
+        features: [
+          { name: 'Project Pipeline', benefit: 'Kanban-style board: sold, in-progress, review, completed. Visual project tracking.', status: 'live' },
+          { name: 'Crew Assignment', benefit: 'Assign crews to projects. See who\'s where and what\'s next.', status: 'live' },
+          { name: 'Project Risk Assessment', benefit: 'AI flags projects that are at risk of delays or cost overruns.', status: 'beta' },
+        ],
+      },
+      {
+        name: 'Team & Admin',
+        hook: 'New hire needs access and it takes a week to set up?',
+        features: [
+          { name: 'Role-Based Access', benefit: 'Super Admin, Company Admin, User — control exactly who can do what.', status: 'live' },
+          { name: 'Team Management', benefit: 'Add users, assign roles, manage permissions from one screen.', status: 'live' },
+          { name: 'Admin Panel', benefit: 'User management, impersonation for testing, and system-wide controls.', status: 'live' },
+          { name: 'Multi-Tenant Architecture', benefit: 'Your data is completely isolated. Enterprise-grade security without the enterprise price.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Customer Portal',
+        hook: 'Sending estimates as email attachments and hoping for the best?',
+        features: [
+          { name: 'Branded Portal', benefit: 'Your logo, your colors, your domain. Customers see a professional experience, not a generic form.', status: 'live' },
+          { name: 'Estimate Review & Sign', benefit: 'Customers review tiers, select upgrades, pick shingle colors, and sign — all online.', status: 'live' },
+          { name: 'Contact Update Requests', benefit: 'Customers request address or phone changes. You review and approve.', status: 'live' },
+          { name: 'Financing Calculator', benefit: 'Built-in payment calculator so customers see monthly costs right on the proposal.', status: 'live' },
+          { name: 'Photo Gallery', benefit: 'Showcase your work. Before/after photos build trust before you show up.', status: 'live' },
+        ],
+      },
+      {
+        name: 'Coming Soon',
+        hook: 'What\'s next on the roadmap?',
+        features: [
+          { name: 'Automated Backup & Restore', benefit: 'One-click backup of all your data. Restore anytime.', status: 'development' },
+          { name: 'Advanced Reporting', benefit: 'Revenue by crew, close rates by lead source, seasonal trends.', status: 'development' },
+          { name: 'Voice Integration', benefit: 'Click-to-call from contact records with automatic logging.', status: 'planned' },
+          { name: 'Inventory Tracking', benefit: 'Track material stock levels across jobs and warehouses.', status: 'planned' },
+          { name: 'QuickBooks Integration', benefit: 'Sync estimates and invoices directly to your accounting software.', status: 'planned' },
+        ],
+      },
+    ],
+  },
+
+  // ══════════════════════════════════════
+  // COMMUNITY PAGE
+  // ══════════════════════════════════════
+
+  communityPage: {
+    hero: {
+      headline: 'Built in the open. Roast us.',
+      subheadline: 'YoinkHub is being built with input from real contractors. Tell us what sucks, what\'s missing, and what would make you switch. No PR filter.',
+    },
+    sections: [
+      {
+        title: 'Request a Feature',
+        description: 'What would make YoinkHub the only tool you need? Tell us and we\'ll prioritize the stuff that actually matters.',
+        icon: 'lightbulb',
+      },
+      {
+        title: 'Report a Bug',
+        description: 'Found something broken? Let us know. We fix things fast because we actually use this software ourselves.',
+        icon: 'bug',
+      },
+      {
+        title: 'Ask a Question',
+        description: 'Confused about something? Wondering if we support a specific workflow? Ask away.',
+        icon: 'question',
+      },
+      {
+        title: 'General Feedback',
+        description: 'Love it? Hate it? Think the name is dumb? We can take it.',
+        icon: 'megaphone',
+      },
+    ],
+    form: {
+      heading: 'Drop us a line',
+      namePlaceholder: 'Your name',
+      emailPlaceholder: 'Your email',
+      categoryLabel: 'What\'s this about?',
+      categories: ['Feature Request', 'Bug Report', 'Question', 'General Feedback', 'Roast Us'],
+      messagePlaceholder: 'What\'s on your mind?',
+      cta: 'Send It',
+      successMessage: 'Got it! We read every single one of these.',
+      errorMessage: 'Something went wrong. Try again or email us directly.',
+    },
+  },
+
   // ──────────────────────────────────────
   // Footer
   // ──────────────────────────────────────
   footer: {
-    copyright: `© ${new Date().getFullYear()} YoinkHub. All rights reserved.`,
+    copyright: `\u00A9 ${new Date().getFullYear()} YoinkHub. All rights reserved.`,
     links: [
+      { label: 'Features', href: '/features' },
+      { label: 'Community', href: '/community' },
       { label: 'Privacy Policy', href: '#' },
       { label: 'Terms of Service', href: '#' },
     ],
