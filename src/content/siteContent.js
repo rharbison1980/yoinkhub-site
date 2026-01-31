@@ -21,6 +21,7 @@ export const siteContent = {
   nav: {
     links: [
       { label: 'Features', href: '/features' },
+      { label: 'Integrations', href: '/integrations' },
       { label: 'Community', href: '/community' },
     ],
     cta: 'Get Early Access',
@@ -37,7 +38,7 @@ export const siteContent = {
     badge: 'Coming Soon — Built by Roofers, for Roofers',
     headline: 'Your CRM shouldn\'t need its own IT department.',
     subheadline:
-      'Tired of duct-taping 6 different apps together just to send an estimate? YoinkHub is one platform that does it all — CRM, estimates, proposals, email, scheduling, and AI — with zero setup fees, zero add-ons, and zero commitment.',
+      'Some tools are amazing at what they do. The problem is none of them talk to each other. YoinkHub connects to the tools you already love and builds everything else — CRM, estimates, proposals, scheduling, and AI — into one platform. Zero setup fees, zero add-ons, zero commitment.',
     cta: 'Get Early Access',
     ctaSubtext: 'Free during early access. No credit card. No contract. No catch.',
   },
@@ -56,9 +57,9 @@ export const siteContent = {
         icon: 'money',
       },
       {
-        hook: '"I need 6 apps and Zapier to run my business"',
-        problem: 'One tool for estimates, another for CRM, another for email, another for scheduling. Nothing talks to each other. Data lives in 12 different places.',
-        solution: 'CRM, estimates, proposals, email, calendar, tasks, and AI — all in one platform. Your data lives in one place because your business runs in one place.',
+        hook: '"Nothing talks to each other"',
+        problem: 'QuickBooks doesn\'t know about your estimates. CompanyCam doesn\'t know about your contacts. Your CRM doesn\'t know about anything. You\'re the integration layer — copy-pasting between tabs all day.',
+        solution: 'YoinkHub connects to the tools that are already great at what they do and builds everything else in-house. One hub, no copy-pasting, no Zapier tax.',
         icon: 'puzzle',
       },
       {
@@ -296,10 +297,120 @@ export const siteContent = {
           { name: 'Advanced Reporting', benefit: 'Revenue by crew, close rates by lead source, seasonal trends.', status: 'development' },
           { name: 'Voice Integration', benefit: 'Click-to-call from contact records with automatic logging.', status: 'planned' },
           { name: 'Inventory Tracking', benefit: 'Track material stock levels across jobs and warehouses.', status: 'planned' },
-          { name: 'QuickBooks Integration', benefit: 'Sync estimates and invoices directly to your accounting software.', status: 'planned' },
         ],
       },
     ],
+  },
+
+  // ══════════════════════════════════════
+  // INTEGRATIONS PAGE
+  // ══════════════════════════════════════
+
+  integrationsPage: {
+    hero: {
+      headline: 'We don\'t replace what already works.',
+      subheadline: 'Some tools are best-in-class at what they do. We\'re not going to out-QuickBooks QuickBooks. Instead, YoinkHub connects to the software you already rely on — and builds everything else the way it should have been built in the first place.',
+    },
+    philosophy: {
+      heading: 'Our approach',
+      text: 'Most CRMs try to do everything and end up doing nothing well. We took a different approach: if a tool is already incredible at what it does, we integrate with it. If nobody\'s built it right for roofing, we build it ourselves. That\'s how you get a platform that actually works — not a half-baked clone of 20 other products.',
+    },
+    statusLegend: {
+      connected: 'Connected',
+      building: 'In Development',
+      planned: 'On the Roadmap',
+    },
+    categories: [
+      {
+        name: 'Already Connected',
+        description: 'These integrations are built-in and working today.',
+        integrations: [
+          {
+            name: 'Gmail',
+            description: 'Send, receive, and track email right inside YoinkHub. Full thread history synced to each contact.',
+            status: 'connected',
+          },
+          {
+            name: 'Outlook',
+            description: 'Microsoft 365 and Outlook.com accounts. Same full integration as Gmail.',
+            status: 'connected',
+          },
+          {
+            name: 'Yahoo Mail',
+            description: 'Connect Yahoo accounts for sending and receiving within the platform.',
+            status: 'connected',
+          },
+          {
+            name: 'iCloud Mail',
+            description: 'Apple iCloud email support for contractors in the Apple ecosystem.',
+            status: 'connected',
+          },
+          {
+            name: 'Google Calendar',
+            description: 'Two-way sync. Appointments created in YoinkHub show up on your phone and vice versa.',
+            status: 'connected',
+          },
+        ],
+      },
+      {
+        name: 'Coming Soon',
+        description: 'Actively being built. These are next in line.',
+        integrations: [
+          {
+            name: 'QuickBooks Online',
+            description: 'Sync estimates, invoices, and payments directly to your books. No double-entry. No export/import dance.',
+            status: 'building',
+          },
+          {
+            name: 'CompanyCam',
+            description: 'Job site photos flow into the right project automatically. Your crew takes the photo, YoinkHub has it.',
+            status: 'building',
+          },
+          {
+            name: 'Stripe',
+            description: 'Accept payments from the customer portal. Credit card, ACH, financing — all tied back to the estimate.',
+            status: 'building',
+          },
+        ],
+      },
+      {
+        name: 'On the Roadmap',
+        description: 'Planned integrations we\'re evaluating and scoping.',
+        integrations: [
+          {
+            name: 'EagleView',
+            description: 'Pull roof measurement reports directly into your estimates. No manual entry from PDFs.',
+            status: 'planned',
+          },
+          {
+            name: 'GAF QuickMeasure',
+            description: 'Import aerial roof measurements and auto-populate estimate tokens.',
+            status: 'planned',
+          },
+          {
+            name: 'Xactimate',
+            description: 'Import and export Xactimate-format estimates for insurance restoration work.',
+            status: 'planned',
+          },
+          {
+            name: 'Zapier',
+            description: 'Connect YoinkHub to 5,000+ apps for anything we haven\'t built a native integration for yet.',
+            status: 'planned',
+          },
+          {
+            name: 'Google Business Profile',
+            description: 'Pull in reviews, respond to customers, and track your online reputation from inside YoinkHub.',
+            status: 'planned',
+          },
+        ],
+      },
+    ],
+    cta: {
+      heading: 'Missing an integration?',
+      text: 'We\'re building this for contractors, not MBAs. If there\'s a tool your crew depends on, tell us.',
+      buttonLabel: 'Request an Integration',
+      buttonHref: '/community',
+    },
   },
 
   // ══════════════════════════════════════
@@ -336,6 +447,7 @@ export const siteContent = {
     copyright: `\u00A9 ${new Date().getFullYear()} YoinkHub. All rights reserved.`,
     links: [
       { label: 'Features', href: '/features' },
+      { label: 'Integrations', href: '/integrations' },
       { label: 'Community', href: '/community' },
       { label: 'Privacy Policy', href: '#' },
       { label: 'Terms of Service', href: '#' },

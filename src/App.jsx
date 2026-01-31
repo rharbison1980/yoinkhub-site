@@ -17,6 +17,7 @@ import WaitlistForm from './partials/WaitlistForm';
 import Footer from './partials/Footer';
 import FeaturesPage from './pages/FeaturesPage';
 import CommunityPage from './pages/CommunityPage';
+import IntegrationsPage from './pages/IntegrationsPage';
 import ThreadPage from './pages/ThreadPage';
 
 function ScrollToTop() {
@@ -69,6 +70,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/features" element={<><FeaturesPage /><WaitlistForm /></>} />
+          <Route path="/integrations" element={<><IntegrationsPage /><WaitlistForm /></>} />
           <Route path="/community" element={<><CommunityPage /><WaitlistForm /></>} />
           <Route path="/community/thread/:id" element={<ThreadPage />} />
         </Routes>
