@@ -228,9 +228,10 @@ export const siteContent = {
       },
       {
         name: 'Email & Communication',
-        hook: 'Alt-tabbing between your CRM and Gmail all day?',
+        hook: '1,967 unread emails and counting?',
         features: [
           { name: 'Built-in Email', benefit: 'Gmail, Outlook, Yahoo, iCloud — your inboxes inside YoinkHub. No Zapier required.', status: 'beta' },
+          { name: 'Email Concierge', benefit: 'AI reads, prioritizes, and surfaces what actually matters. It drafts replies, flags urgent items, and quietly handles the noise — so you open your inbox to a game plan, not a panic attack.', status: 'beta' },
           { name: 'Email Templates', benefit: 'Reusable templates with merge tokens. {{contact.firstName}} writes the email for you.', status: 'beta' },
           { name: 'AI Reply Suggestions', benefit: 'AI drafts replies that match your writing style. Review, tweak, send.', status: 'beta' },
           { name: 'Thread View', benefit: 'Full conversation history with each contact. No more digging through inboxes.', status: 'beta' },
