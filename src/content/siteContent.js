@@ -77,7 +77,7 @@ export const siteContent = {
       {
         hook: '"My crew can barely use their phones, let alone this software"',
         problem: 'Enterprise CRMs designed for corporate sales floors. Your guys are on roofs, not at desks. If it\'s not dead simple, it doesn\'t get used.',
-        solution: 'Built mobile-first. Designed for people who hate software. If your crew can text, they can use YoinkHub.',
+        solution: 'Native desktop app for Mac and Windows. Mobile apps for iOS and Android coming soon. Designed for people who hate software — if your crew can text, they can use YoinkHub.',
         icon: 'phone',
       },
       {
@@ -107,7 +107,8 @@ export const siteContent = {
       { label: 'Vendor Price Lists', included: true },
       { label: 'Reports & Analytics', included: true },
       { label: 'Team Management', included: true },
-      { label: 'Mobile App', included: true },
+      { label: 'Native Desktop App (Mac & Windows)', included: true },
+      { label: 'Mobile Apps (iOS & Android — coming soon)', included: true },
     ],
   },
 
@@ -288,6 +289,17 @@ export const siteContent = {
           { name: 'Contact Update Requests', benefit: 'Customers request address or phone changes. You review and approve.', status: 'beta' },
           { name: 'Financing Calculator', benefit: 'Built-in payment calculator so customers see monthly costs right on the proposal.', status: 'beta' },
           { name: 'Photo Gallery', benefit: 'Showcase your work. Before/after photos build trust before you show up.', status: 'beta' },
+        ],
+      },
+      {
+        name: 'Platform & Apps',
+        hook: 'Your office is a truck cab, a kitchen table, and a job site.',
+        features: [
+          { name: 'Mac Desktop App', benefit: 'Native macOS app. Fast, responsive, and built for Macs — not a browser tab pretending to be software.', status: 'beta' },
+          { name: 'Windows Desktop App', benefit: 'Native Windows app with the same full feature set. Runs on any modern PC.', status: 'beta' },
+          { name: 'iOS App (iPhone & iPad)', benefit: 'Full YoinkHub on your iPhone or iPad. Create estimates, manage contacts, and check your pipeline from the field.', status: 'planned' },
+          { name: 'Android App (Phone & Tablet)', benefit: 'Same mobile experience for your Android crew. No feature gaps between platforms.', status: 'planned' },
+          { name: 'Offline Mode', benefit: 'Spotty signal on the roof? Work offline and sync when you\'re back. No lost data.', status: 'planned' },
         ],
       },
       {
