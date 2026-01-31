@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/clerk-react';
 import { siteContent } from '../content/siteContent';
 
 function Header() {
@@ -14,7 +15,6 @@ function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileOpen(false);
   }, [location]);
@@ -45,7 +45,7 @@ function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {siteContent.nav.links.map((link, index) => (
               <Link
                 key={index}
@@ -59,30 +59,48 @@ function Header() {
                 {link.label}
               </Link>
             ))}
+
             <button
               onClick={handleCtaClick}
               className="btn-sm bg-primary text-white hover:bg-primary-dark shadow-orange hover:shadow-orange-lg"
             >
               {siteContent.nav.cta}
             </button>
+
+            {/* Clerk auth */}
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button className="btn-sm border border-gray-200 text-gray-600 hover:text-primary hover:border-primary">
+                  Sign In
+                </button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
           </nav>
 
-          {/* Mobile hamburger */}
-          <button
-            className="md:hidden p-2 text-gray-600 hover:text-primary"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+          {/* Mobile: auth + hamburger */}
+          <div className="md:hidden flex items-center gap-3">
+            <SignedIn>
+              <UserButton afterSignOutUrl="/" />
+            </SignedIn>
+            <button
+              className="p-2 text-gray-600 hover:text-primary"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -108,6 +126,13 @@ function Header() {
               >
                 {siteContent.nav.cta}
               </button>
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <button className="mt-1 btn-sm border border-gray-200 text-gray-600 hover:text-primary hover:border-primary text-center">
+                    Sign In
+                  </button>
+                </SignInButton>
+              </SignedOut>
             </nav>
           </div>
         )}

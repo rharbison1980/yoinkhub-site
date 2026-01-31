@@ -311,39 +311,22 @@ export const siteContent = {
       headline: 'Built in the open. Roast us.',
       subheadline: 'YoinkHub is being built with input from real contractors. Tell us what sucks, what\'s missing, and what would make you switch. No PR filter.',
     },
-    sections: [
-      {
-        title: 'Request a Feature',
-        description: 'What would make YoinkHub the only tool you need? Tell us and we\'ll prioritize the stuff that actually matters.',
-        icon: 'lightbulb',
-      },
-      {
-        title: 'Report a Bug',
-        description: 'Found something broken? Let us know. We fix things fast because we actually use this software ourselves.',
-        icon: 'bug',
-      },
-      {
-        title: 'Ask a Question',
-        description: 'Confused about something? Wondering if we support a specific workflow? Ask away.',
-        icon: 'question',
-      },
-      {
-        title: 'General Feedback',
-        description: 'Love it? Hate it? Think the name is dumb? We can take it.',
-        icon: 'megaphone',
-      },
-    ],
-    form: {
-      heading: 'Drop us a line',
-      namePlaceholder: 'Your name',
-      emailPlaceholder: 'Your email',
-      categoryLabel: 'What\'s this about?',
-      categories: ['Feature Request', 'Bug Report', 'Question', 'General Feedback', 'Roast Us'],
+    categories: ['Feature Request', 'Bug Report', 'Question', 'General Feedback', 'Roast Us'],
+    threadForm: {
+      heading: 'Start a Thread',
+      titlePlaceholder: 'Thread title',
+      categoryLabel: 'Category',
       messagePlaceholder: 'What\'s on your mind?',
-      cta: 'Send It',
-      successMessage: 'Got it! We read every single one of these.',
-      errorMessage: 'Something went wrong. Try again or email us directly.',
+      cta: 'Post Thread',
+      signInPrompt: 'Sign in to start a discussion.',
     },
+    replyForm: {
+      placeholder: 'Write a reply... (use @Name to mention someone)',
+      cta: 'Post Reply',
+      signInPrompt: 'Sign in to join the discussion.',
+    },
+    emptyState: 'No threads yet. Be the first to start a discussion.',
+    errorMessage: 'Something went wrong. Please try again.',
   },
 
   // ──────────────────────────────────────
