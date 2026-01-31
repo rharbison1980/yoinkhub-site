@@ -267,7 +267,20 @@ export const siteContent = {
         features: [
           { name: 'Project Pipeline', benefit: 'Kanban-style board: sold, in-progress, review, completed. Visual project tracking.', status: 'beta' },
           { name: 'Crew Assignment', benefit: 'Assign crews to projects. See who\'s where and what\'s next.', status: 'beta' },
+          { name: 'Work Orders', benefit: 'Generate work orders tied to projects. Assign scope, materials, and crew — then track completion from the field.', status: 'beta' },
+          { name: 'Purchase Orders', benefit: 'Create POs against vendor price lists. Track what\'s been ordered, received, and invoiced per job.', status: 'beta' },
+          { name: 'Job Costing', benefit: 'Track actual costs against estimates in real time. Materials, labor, subs — know your margins before the job is done, not after.', status: 'beta' },
           { name: 'Project Risk Assessment', benefit: 'AI flags projects that are at risk of delays or cost overruns.', status: 'beta' },
+        ],
+      },
+      {
+        name: 'SOPs & Field Operations',
+        hook: 'Your best crew knows the process. The rest are guessing.',
+        features: [
+          { name: 'SOP Builder', benefit: 'Create step-by-step standard operating procedures for installs, inspections, safety, and cleanup. Assign to job types or crews.', status: 'beta' },
+          { name: 'SOP Checklists', benefit: 'Turn SOPs into checklists your crew completes on-site. Track compliance and sign-off per job.', status: 'beta' },
+          { name: 'Safety Paperwork', benefit: 'Digital safety forms, toolbox talks, and incident reports. Completed on-site, stored with the project — no more paper binders.', status: 'beta' },
+          { name: 'Pre-Job & Post-Job Inspections', benefit: 'Configurable inspection forms with photo capture. Document conditions before and after every job.', status: 'beta' },
         ],
       },
       {
@@ -297,6 +310,7 @@ export const siteContent = {
         features: [
           { name: 'Mac Desktop App', benefit: 'Native macOS app. Fast, responsive, and built for Macs — not a browser tab pretending to be software.', status: 'beta' },
           { name: 'Windows Desktop App', benefit: 'Native Windows app with the same full feature set. Runs on any modern PC.', status: 'beta' },
+          { name: 'Dedicated Crew App', benefit: 'Stripped-down field app for your crew. Work orders, checklists, safety forms, and time tracking — nothing they don\'t need, everything they do.', status: 'beta' },
           { name: 'iOS App (iPhone & iPad)', benefit: 'Full YoinkHub on your iPhone or iPad. Create estimates, manage contacts, and check your pipeline from the field.', status: 'planned' },
           { name: 'Android App (Phone & Tablet)', benefit: 'Same mobile experience for your Android crew. No feature gaps between platforms.', status: 'planned' },
           { name: 'Offline Mode', benefit: 'Spotty signal on the roof? Work offline and sync when you\'re back. No lost data.', status: 'planned' },
