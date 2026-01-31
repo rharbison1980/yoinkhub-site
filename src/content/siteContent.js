@@ -223,7 +223,7 @@ export const siteContent = {
           { name: 'Labor Rate Management', benefit: 'Base rates with pitch multipliers (2/12 through 12/12). The math handles itself.', status: 'beta' },
           { name: 'Smart Price List Import', benefit: 'Upload vendor PDFs or spreadsheets. AI parses and maps pricing to your database.', status: 'beta' },
           { name: 'Formula Engine', benefit: 'Custom calculation formulas for quantity and pricing. Spreadsheet-grade power without the spreadsheet.', status: 'beta' },
-          { name: 'Manufacturer Scrapers', benefit: 'Auto-pull latest pricing from GAF, CertainTeed, Owens Corning, IKO, and more.', status: 'beta' },
+          { name: 'Manufacturer Scrapers', benefit: 'Auto-pull marketing specs, tech docs, and product data from GAF, CertainTeed, Owens Corning, IKO, and more. Pricing comes from your vendors.', status: 'beta' },
         ],
       },
       {
