@@ -135,6 +135,28 @@ export default async function handler(req, res) {
       // Send @mention notifications (non-blocking)
       sendMentionNotifications(message, user.displayName, thread.id, title.trim());
 
+      // Notify admin of new thread (non-blocking)
+      if (process.env.RESEND_API_KEY && process.env.NOTIFY_EMAIL) {
+        fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            from: 'YoinkHub Community <noreply@yoinkhub.com>',
+            to: process.env.NOTIFY_EMAIL,
+            subject: `New thread: "${title.trim()}"`,
+            html: `
+              <p><strong>${user.displayName}</strong> started a new thread in <strong>${category}</strong>:</p>
+              <h2>${title.trim()}</h2>
+              <p>${message.trim().substring(0, 300)}${message.trim().length > 300 ? '...' : ''}</p>
+              <p><a href="https://yoinkhub.com/community/thread/${thread.id}">View thread</a></p>
+            `,
+          }),
+        }).catch(() => {});
+      }
+
       return res.status(201).json(thread);
     } catch (error) {
       console.error('[Threads POST] Error:', error);
