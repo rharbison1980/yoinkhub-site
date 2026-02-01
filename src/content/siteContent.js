@@ -35,7 +35,7 @@ export const siteContent = {
   // Hero Section
   // ──────────────────────────────────────
   hero: {
-    badge: 'Coming Soon — Built by Roofers, for Roofers',
+    badge: 'Early Access — Built by Roofers, for Roofers',
     headline: 'Your CRM shouldn\'t need its own IT department.',
     subheadline:
       'Some tools are amazing at what they do. The problem is none of them talk to each other. YoinkHub connects to the tools you already love and builds everything else — CRM, estimates, proposals, scheduling, and AI — into one platform. Zero setup fees, zero add-ons, zero commitment.',
@@ -99,16 +99,20 @@ export const siteContent = {
       { label: 'CRM & Contacts', included: true },
       { label: 'Estimates & Proposals', included: true },
       { label: 'Email (Gmail, Outlook, Yahoo, iCloud)', included: true },
+      { label: 'SMS Messaging & Sequences', included: true },
+      { label: 'VoIP Phone System & AI Voice', included: true },
       { label: 'Calendar & Scheduling', included: true },
       { label: 'Task Management', included: true },
       { label: 'AI Assistant', included: true },
       { label: 'Customer Portal', included: true },
       { label: 'Project Management', included: true },
+      { label: 'Work Orders & Purchase Orders', included: true },
+      { label: 'Safety & Compliance', included: true },
+      { label: 'Inventory & Asset Tracking', included: true },
       { label: 'Vendor Price Lists', included: true },
       { label: 'Reports & Analytics', included: true },
       { label: 'Team Management', included: true },
-      { label: 'Native Desktop App (Mac & Windows)', included: true },
-      { label: 'Mobile Apps (iOS & Android — coming soon)', included: true },
+      { label: 'Cross-Platform Apps (Mac, Windows, iOS, Android)', included: true },
     ],
   },
 
@@ -126,9 +130,9 @@ export const siteContent = {
       },
       {
         step: 2,
-        title: 'Build estimates in minutes',
+        title: 'Drop a roof report, get an estimate',
         description:
-          'Plug in roof measurements, pick a template, and let the calculation engine handle pricing, waste, pitch adjustments, and margins. Send a professional proposal before you leave the driveway.',
+          'Drag a QuickMeasure, EagleView, Hover, or RoofSnap PDF onto the screen. AI extracts every measurement — pitch areas, ridges, hips, valleys, flashing — and generates a fully priced estimate in seconds. No manual entry. No retyping numbers from a PDF.',
       },
       {
         step: 3,
@@ -206,6 +210,8 @@ export const siteContent = {
         name: 'Estimates & Proposals',
         hook: 'Still building estimates in Excel and hoping you didn\'t miss a line item?',
         features: [
+          { name: 'Drag-and-Drop Roof Reports', benefit: 'Drop a QuickMeasure, EagleView, Hover, RoofSnap, Roofr, or KRL PDF onto the screen. AI auto-detects the provider, extracts every measurement, and splits multi-building properties (house, garage) automatically.', status: 'beta' },
+          { name: 'One-Click Estimate Generation', benefit: 'Parsed measurements flow straight into your estimate templates. Pick a template, and pricing, labor, waste, and pitch adjustments calculate instantly — no retyping from a PDF.', status: 'beta' },
           { name: 'Estimate Builder', benefit: 'Live calculation engine with measurement tokens, pitch adjustments, waste factors, and margin control.', status: 'beta' },
           { name: 'Roofing-Specific Tokens', benefit: '40+ pre-built tokens for squares, hips, valleys, ridges, flashing — enter once, calculate everywhere.', status: 'beta' },
           { name: 'Estimate Templates', benefit: 'Build once, reuse forever. Templates with materials, labor, and miscellaneous sections.', status: 'beta' },
@@ -240,6 +246,18 @@ export const siteContent = {
         ],
       },
       {
+        name: 'Phone & SMS',
+        hook: 'Still using your personal cell and hoping you remember to log the call?',
+        features: [
+          { name: 'VoIP Phone System', benefit: 'Business phone numbers with click-to-call, call history, voicemail, and automatic logging — all inside YoinkHub.', status: 'beta' },
+          { name: 'AI Voice Agents', benefit: 'AI answers inbound calls, qualifies leads, and books appointments when you can\'t pick up. Powered by ElevenLabs.', status: 'beta' },
+          { name: 'Voicemail Transcription', benefit: 'Every voicemail transcribed and attached to the contact record. Scan instead of listen.', status: 'beta' },
+          { name: 'SMS Messaging', benefit: 'Send and receive texts from your business number. Full conversation threads tied to contacts.', status: 'beta' },
+          { name: 'SMS Sequences', benefit: 'Automated text drip campaigns triggered by events — estimate sent, proposal viewed, project completed. Stops when they reply.', status: 'beta' },
+          { name: 'Call & SMS Analytics', benefit: 'Volume, connect rates, response times. Know which outreach actually converts.', status: 'beta' },
+        ],
+      },
+      {
         name: 'AI & Automation',
         hook: 'Heard "AI-Powered" so many times it lost all meaning?',
         features: [
@@ -247,7 +265,7 @@ export const siteContent = {
           { name: 'Knowledge Base (RAG)', benefit: 'Upload your docs. AI searches them semantically and cites its sources.', status: 'beta' },
           { name: 'Weekly Digest', benefit: 'AI-generated summary of your pipeline, anomalies, and action items. Every Monday.', status: 'beta' },
           { name: 'Lead Scoring', benefit: 'ML-based scoring that learns from your pipeline to rank leads by close probability.', status: 'beta' },
-          { name: 'Measurement Extraction', benefit: 'Upload a roof report image. AI extracts measurements and populates your estimate.', status: 'beta' },
+          { name: 'Measurement Extraction', benefit: 'Supports 6 report providers (QuickMeasure, EagleView, Hover, RoofSnap, Roofr, KRL). Two-stage AI parsing with self-correction. Multi-building detection splits house and garage automatically.', status: 'beta' },
           { name: 'Concierge Rules Engine', benefit: 'If/then business rules that automate follow-ups, status changes, and alerts.', status: 'beta' },
           { name: '4 AI Providers', benefit: 'Claude, Gemini, OpenAI, Grok — pick your provider or let the system choose the best for each task.', status: 'beta' },
         ],
@@ -284,6 +302,29 @@ export const siteContent = {
         ],
       },
       {
+        name: 'Safety & Compliance',
+        hook: 'Still doing safety paperwork on clipboards that end up under the truck seat?',
+        features: [
+          { name: 'Safety Form Builder', benefit: '16 pre-built templates (Fall Protection, FLHA, Equipment Inspection, Toolbox Talk, and more) plus a drag-and-drop builder for custom forms.', status: 'beta' },
+          { name: 'Mobile Form Completion', benefit: 'Crews fill out safety forms on-site with photo capture, GPS, and digital signatures. Stored with the project automatically.', status: 'beta' },
+          { name: 'Incident Reporting', benefit: 'Report injuries, near-misses, and property damage with severity tracking, investigation workflow, and days-without-incident counters.', status: 'beta' },
+          { name: 'Corrective Actions', benefit: 'Auto-generate corrective actions from failed inspections. Track assignment, priority, resolution, and verification.', status: 'beta' },
+          { name: 'Certification Tracking', benefit: '15 certification types — Fall Protection, First Aid, WHMIS, OSHA, COR — with expiry alerts and renewal reminders.', status: 'beta' },
+          { name: 'Compliance Dashboard', benefit: 'Safety scores, trends, overdue forms, and incident history at a glance. COR audit package export for Alberta.', status: 'beta' },
+        ],
+      },
+      {
+        name: 'Inventory & Asset Tracking',
+        hook: 'Lost another $800 nail gun because nobody knows who checked it out?',
+        features: [
+          { name: 'Asset Management', benefit: 'Track tools, equipment, and materials with categories, photos, and status (active, maintenance, retired, lost).', status: 'beta' },
+          { name: 'QR Code Tracking', benefit: 'Generate QR codes for every item. Scan to check out, check in, transfer, or inspect — no typing required.', status: 'beta' },
+          { name: 'Check-Out / Check-In', benefit: 'Assign items to crew members, trucks, or job sites. Full audit trail of who had what and when.', status: 'beta' },
+          { name: 'Transfers & Inspections', benefit: 'Move items between locations and record inspections with notes. Inspection-due reminders keep equipment compliant.', status: 'beta' },
+          { name: 'Inventory Dashboard', benefit: 'Counts by status, location, and category. See what\'s checked out, what needs inspection, and what\'s overdue.', status: 'beta' },
+        ],
+      },
+      {
         name: 'Team & Admin',
         hook: 'New hire needs access and it takes a week to set up?',
         features: [
@@ -298,21 +339,28 @@ export const siteContent = {
         hook: 'Sending estimates as email attachments and hoping for the best?',
         features: [
           { name: 'Branded Portal', benefit: 'Your logo, your colors, your domain. Customers see a professional experience, not a generic form.', status: 'beta' },
-          { name: 'Estimate Review & Sign', benefit: 'Customers review tiers, select upgrades, pick shingle colors, and sign — all online.', status: 'beta' },
+          { name: 'Estimate Review & Sign', benefit: 'Customers review tiers, select component upgrades, pick options, and e-sign — all online.', status: 'beta' },
+          { name: 'Financing Calculator', benefit: 'Built-in payment calculator with multiple terms so customers see monthly costs right on the proposal.', status: 'beta' },
+          { name: 'Before/After Gallery', benefit: 'Interactive slider to compare before and after photos. Build trust before you show up.', status: 'beta' },
+          { name: 'Appointment Scheduling', benefit: 'Customers request site visits, inspections, or follow-ups with preferred dates. You approve or reschedule.', status: 'beta' },
+          { name: 'Project Timeline', benefit: 'Customers see exactly where their project stands — from sold through completion — without calling the office.', status: 'beta' },
+          { name: 'Document Library', benefit: 'Share warranties, product specs, and sell sheets. Customers download what they need.', status: 'beta' },
+          { name: 'Referral Program', benefit: 'Customers refer friends and neighbors right from the portal. Name, phone, and relationship — captured automatically.', status: 'beta' },
+          { name: 'Learning Center', benefit: 'Roofing glossary, material education, and FAQs so customers understand what they\'re buying.', status: 'beta' },
+          { name: 'Promotions & Discounts', benefit: 'Display active promotions with promo codes and expiration dates. Rotating carousel for multiple offers.', status: 'beta' },
           { name: 'Contact Update Requests', benefit: 'Customers request address or phone changes. You review and approve.', status: 'beta' },
-          { name: 'Financing Calculator', benefit: 'Built-in payment calculator so customers see monthly costs right on the proposal.', status: 'beta' },
-          { name: 'Photo Gallery', benefit: 'Showcase your work. Before/after photos build trust before you show up.', status: 'beta' },
+          { name: 'Proposal Analytics', benefit: 'Track when customers open, scroll, and interact with proposals. Know who\'s engaged before you follow up.', status: 'beta' },
         ],
       },
       {
         name: 'Platform & Apps',
         hook: 'Your office is a truck cab, a kitchen table, and a job site.',
         features: [
-          { name: 'Mac Desktop App', benefit: 'Native macOS app. Fast, responsive, and built for Macs — not a browser tab pretending to be software.', status: 'beta' },
-          { name: 'Windows Desktop App', benefit: 'Native Windows app with the same full feature set. Runs on any modern PC.', status: 'beta' },
-          { name: 'Dedicated Crew App', benefit: 'Stripped-down field app for your crew. Work orders, checklists, safety forms, and time tracking — nothing they don\'t need, everything they do.', status: 'beta' },
-          { name: 'iOS App (iPhone & iPad)', benefit: 'Full YoinkHub on your iPhone or iPad. Create estimates, manage contacts, and check your pipeline from the field.', status: 'planned' },
-          { name: 'Android App (Phone & Tablet)', benefit: 'Same mobile experience for your Android crew. No feature gaps between platforms.', status: 'planned' },
+          { name: 'Web App', benefit: 'Full-featured web app that runs in any modern browser. No install required.', status: 'beta' },
+          { name: 'Mac Desktop App', benefit: 'Native macOS app. Fast, responsive, and built for Macs — not a browser tab pretending to be software.', status: 'development' },
+          { name: 'Windows Desktop App', benefit: 'Native Windows app with the same full feature set. Runs on any modern PC.', status: 'development' },
+          { name: 'iOS App (iPhone & iPad)', benefit: 'Full YoinkHub on your iPhone or iPad. Create estimates, manage contacts, and check your pipeline from the field.', status: 'development' },
+          { name: 'Android App (Phone & Tablet)', benefit: 'Same mobile experience for your Android crew. No feature gaps between platforms.', status: 'development' },
           { name: 'Offline Mode', benefit: 'Spotty signal on the roof? Work offline and sync when you\'re back. No lost data.', status: 'planned' },
         ],
       },
@@ -320,10 +368,12 @@ export const siteContent = {
         name: 'Coming Soon',
         hook: 'What\'s next on the roadmap?',
         features: [
-          { name: 'Automated Backup & Restore', benefit: 'One-click backup of all your data. Restore anytime.', status: 'development' },
-          { name: 'Advanced Reporting', benefit: 'Revenue by crew, close rates by lead source, seasonal trends.', status: 'development' },
-          { name: 'Voice Integration', benefit: 'Click-to-call from contact records with automatic logging.', status: 'planned' },
-          { name: 'Inventory Tracking', benefit: 'Track material stock levels across jobs and warehouses.', status: 'planned' },
+          { name: 'Automated Backup & Restore', benefit: 'One-click backup of all your data. Restore anytime.', status: 'beta' },
+          { name: 'Advanced Reporting', benefit: 'Revenue by crew, close rates by lead source, seasonal trends. Project profitability and crew performance.', status: 'development' },
+          { name: 'Google Calendar Sync', benefit: 'Two-way sync between YoinkHub and Google Calendar. Appointments show up on your phone automatically.', status: 'development' },
+          { name: 'Dedicated Crew App', benefit: 'Stripped-down field app for your crew. Work orders, checklists, safety forms, and time tracking — nothing they don\'t need, everything they do.', status: 'planned' },
+          { name: 'HR & Employee Management', benefit: 'Employee records, time tracking, timesheet approval, PTO, performance reviews, and training records.', status: 'planned' },
+          { name: 'Power Dialer', benefit: 'Sequential auto-dial through filtered contact lists with AI post-call summarization and smart follow-up queues.', status: 'planned' },
         ],
       },
     ],
@@ -373,8 +423,18 @@ export const siteContent = {
             status: 'connected',
           },
           {
-            name: 'Google Calendar',
-            description: 'Two-way sync. Appointments created in YoinkHub show up on your phone and vice versa.',
+            name: 'QuickBooks Online',
+            description: 'OAuth2 connection with customer sync, invoice push, tax code mapping, and Projects API. Your books stay in sync automatically.',
+            status: 'connected',
+          },
+          {
+            name: 'CompanyCam',
+            description: 'Job site photos flow into the right project automatically. Your crew takes the photo, YoinkHub has it.',
+            status: 'connected',
+          },
+          {
+            name: 'Twilio',
+            description: 'Business phone numbers, SMS messaging, voice calls, and AI voice agents — all powered by Twilio under the hood.',
             status: 'connected',
           },
         ],
@@ -384,13 +444,8 @@ export const siteContent = {
         description: 'Actively being built. These are next in line.',
         integrations: [
           {
-            name: 'QuickBooks Online',
-            description: 'Sync estimates, invoices, and payments directly to your books. No double-entry. No export/import dance.',
-            status: 'building',
-          },
-          {
-            name: 'CompanyCam',
-            description: 'Job site photos flow into the right project automatically. Your crew takes the photo, YoinkHub has it.',
+            name: 'Google Calendar',
+            description: 'Two-way sync. Appointments created in YoinkHub show up on your phone and vice versa.',
             status: 'building',
           },
           {
@@ -427,6 +482,11 @@ export const siteContent = {
           {
             name: 'Google Business Profile',
             description: 'Pull in reviews, respond to customers, and track your online reputation from inside YoinkHub.',
+            status: 'planned',
+          },
+          {
+            name: 'FinanceIT',
+            description: 'Consumer financing for Canadian contractors. Pre-filled applications, status tracking, and monthly payment options on proposals.',
             status: 'planned',
           },
         ],
